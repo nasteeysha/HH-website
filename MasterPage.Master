@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="OnlineShop.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__container _container">
+                    <nav class="header__menu menu">
+                        <div class="menu__list">
+                            <div>
+                                <ul class="menu__list1">
+                                    <li class="menu__item">
+                                        <a href="/mainpage" class="menu__link menu__link_active">Главная</a>
+                                    </li>
+                                    <% if (OnlineShop.Cookies.CheckLogin(this.Page))
+                                            Response.Write(" <li class=\"menu__item\">" +
+                                                "<a href=\"/vacancies\" class=\"menu__link\">Вакансии</a>" +
+                                                "</li>");
+                                            %>
+                                   
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="menu__list2">
+
+                                    <%if (OnlineShop.Cookies.Role(this.Page) == "admin")
+                                        {
+                                            Response.Write(String.Format("<li class=\"menu__item\"><a href=\"/uservacancies\" class=\"menu__link\">Мои вакансии</a></li>"));
+                                            Response.Write(String.Format("<li class=\"menu__item\"><a href=\"/editvacancy?vacancyId=-1\" class=\"menu__link\">Добавить вакансию</a></li>"));
+                                        }
+                                        else if (OnlineShop.Cookies.Role(this.Page) == "user")
+                                            Response.Write(String.Format("<li class=\"menu__item\"><a href=\"/Favorites\" class=\"menu__link\">Избранное</a></li>"));
+                                        if (OnlineShop.Cookies.CheckLogin(this.Page))
+                                        {
+
+                                            Response.Write(String.Format("<li class=\"menu__item\"><a href=\"/profile\" class=\"menu__link\">Личный кабинет</a></li>"));
+                                        }
+                                        else
+                                            Response.Write(String.Format("   <li class=\"menu__item\"><a href=\"/signup\" class=\"menu__link\">Регистрация</a>   </li>"));
+                                    %>
+                                    <li class="menu__item_last">
+                                        <%if (!OnlineShop.Cookies.CheckLogin(this.Page))
+                                                Response.Write(String.Format("<a href=\"/login\" class=\"menu__link\">Вход</a>"));
+                                            else
+                                                Response.Write(String.Format("<a href=\"/logout\" class=\"menu__link\">Выход</a>"));
+                                        %>           
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+<%--        <% if (this.Page.Title == "Главная")
+                Response.Write(String.Format("<footer class=\"footer\"><div class=\"footer-content\"><div class=\"_container\">Храмова Анастасия 2023</div></div></footer>"));
+        %>--%>
+    </form>
+</body>
+</html>

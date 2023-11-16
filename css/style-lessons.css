@@ -1,0 +1,156 @@
+@import url(/fonts/DelaGothicOne_Regular.ttf);
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #efefef;
+    background-color: #cab5b5;
+    font-family: "Dela Gothic One Regular";
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+._container {
+  max-width: 1160px;
+  margin: 0px auto;
+}
+a {
+  color: #efefef;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+.header__container {
+  display: flex;
+  min-height: 80px;
+  align-items: center;
+}
+
+.header__menu {
+}
+.menu {
+  width: 100%;
+}
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+.menu__list1 {
+  display: flex;
+}
+.menu__list2 {
+  display: flex;
+}
+
+.menu__item {
+  margin: 0px 30px 0px 0px;
+}
+.menu__item_last {
+  margin: 0px 0px 0px 0px;
+}
+/*--Main--*/
+
+main {
+  flex: 1 1 auto;
+}
+.page {
+}
+.page__container {
+  padding: 40px 0px 0px 0px;
+  position: relative;
+  z-index: 2;
+}
+.page-title {
+    display: inline;
+    margin-top: 50px;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.page-title-boxing {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.page-title-edit-button{
+    color:#60e875;
+}
+.page-lesson {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.page-text {
+  line-height: 145%;
+}
+.page-boxing {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  height: 400px;
+}
+.page-boxing__video-explanation {
+  width: 50%;
+  margin-left: 15px;
+  overflow-y: scroll;
+  line-height: 181%;
+}
+.page__buttons {
+}
+.page-boxing__buttons {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+.page__button_last {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #cab5b5;
+    color: #efefef;
+    padding: 13px 80px;
+    border-radius: 10px;
+}
+.page__button_next {
+    background-color: #cab5b5;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 13px 80px;
+    border-radius: 10px;
+    color: #181717;
+}
+*::-webkit-scrollbar {
+  width: 4px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  border: 3px solid;
+  border-radius: 10px;
+  color: #efefef;
+}
+.page-boxing__video-explanation::-webkit-scrollbar-thumb {
+  color: #60e875;
+  border: 2px solid;
+  border-radius: 10px;
+}
+/*--Footer--*/
+.footer {
+}
+.footer-content {
+  background-color: #efefef;
+  color: #181717;
+  font-size: 12px;
+  padding-top: 35px;
+  padding-bottom: 15px;
+}

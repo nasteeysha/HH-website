@@ -1,0 +1,215 @@
+@import url(/fonts/DelaGothicOne_Regular.ttf);
+
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #efefef;
+    background-color: #181717;
+    font-family: "Dela Gothic One Regular";
+    accent-color: #fff852;
+}
+
+*::-webkit-scrollbar {
+    width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    border: 3px solid;
+    border-radius: 10px;
+    color: #efefef;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+._container {
+    max-width: 1160px;
+    margin: 0px auto;
+}
+
+a {
+    color: #efefef;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+
+.header__container {
+    display: flex;
+    min-height: 80px;
+    align-items: center;
+}
+
+.header__menu {
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu__list1 {
+    display: flex;
+}
+
+.menu__list2 {
+    display: flex;
+}
+
+.menu__item {
+    margin: 0px 30px 0px 0px;
+}
+
+.menu__item_last {
+    margin: 0px 0px 0px 0px;
+}
+
+.menu__link {
+    font-size: 12px;
+}
+/*--Main--*/
+
+main {
+    flex: 1 1 auto;
+}
+
+.page {
+}
+
+.page__container {
+    padding: 40px 0px 0px 0px;
+    position: relative;
+    z-index: 2;
+}
+
+.page-title {
+    margin-top: 50px;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.test-form-yellow {
+    width: 100%;
+    background-color: #959137;
+    padding: 20px 30px 20px 30px;
+    border-radius: 20px;
+    overflow-x: hidden;
+    margin-top: 20px;
+}
+.test-form-red {
+    width: 100%;
+    background-color: #942D2D;
+    padding: 20px 30px 20px 30px;
+    border-radius: 20px;
+    overflow-x: hidden;
+    margin-top: 20px;
+}
+.test-form-green {
+    width: 100%;
+    background-color: #3f884a;
+    padding: 20px 30px 20px 30px;
+    border-radius: 20px;
+    overflow-x: hidden;
+    margin-top: 20px;
+}
+.page-test-form:last-child {
+    margin-bottom: 80px;
+}
+
+.test-question {
+    font-size: 18px;
+    padding-bottom: 5px;
+    line-height: 143%;
+}
+
+.test-answer {
+    line-height: 143%;
+    padding-bottom: 5px;
+}
+
+    .test-answer:last-child {
+        padding-bottom: 0px;
+    }
+
+.test-form-input {
+    height: 32px;
+    width: 300px;
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: #efefef;
+    border-radius: 10px;
+    color: #525151;
+    padding-left: 10px;
+}
+
+.test-form-button {
+    margin-top: 10px;
+    color: #181717;
+    padding: 7px 30px;
+    line-height: 143%;
+    border-radius: 10px;
+    background-color: #efefef;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+    .test-form-button:active {
+        box-shadow: none;
+    }
+
+.finish {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    display: inline-flex;
+    float: right;
+}
+
+.finish-button {
+    background: #60e875;
+    border-radius: 10px;
+    padding: 12px 50px;
+    font-size: 14px;
+    color: #181717;
+    cursor: pointer;
+}
+
+    .finish-button:hover {
+        background-color: #fd3f3f;
+    }
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+/*--Footer--*/
+.footer {
+}
+
+.footer-content {
+    background-color: #efefef;
+    color: #181717;
+    font-size: 12px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}

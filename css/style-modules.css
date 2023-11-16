@@ -1,0 +1,170 @@
+@import url(/fonts/DelaGothicOne_Regular.ttf);
+
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: white;
+    background-color: white;
+    font-family: "Dela Gothic One Regular";
+}
+
+*::-webkit-scrollbar {
+    width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    border: 3px solid;
+    border-radius: 10px;
+    color: black;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+._container {
+    max-width: 1160px;
+    margin: 0px auto;
+}
+
+a {
+    color: white;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    background: #cab5b5;
+    color: #cab5b5;
+}
+
+.header__container {
+    display: flex;
+    min-height: 80px;
+    align-items: center;
+}
+
+.header__menu {
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menu__list1 {
+    display: flex;
+}
+
+.menu__list2 {
+    display: flex;
+}
+
+.menu__item {
+    margin: 0px 30px 0px 0px;
+}
+
+.menu__item_last {
+    margin: 0px 0px 0px 0px;
+}
+
+/*--Main--*/
+
+main {
+    flex: 1 1 auto;
+}
+
+.page {
+}
+
+.page__container {
+    padding: 40px 0px 0px 0px;
+    position: relative;
+    z-index: 2;
+}
+
+.page-title {
+    color: #cab5b5;
+    margin-top: 70px;
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.page-modules-container {
+    width: 100%;
+    background-color: white;
+    padding: 20px 30px 40px 30px;
+    border-radius: 20px;
+    overflow-x: hidden;
+    margin-top: 20px;
+}
+
+    .page-modules-container:last-child {
+        margin-bottom: 80px;
+    }
+
+.page-modules-container-title {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.page-modules-container-text {
+    line-height: 143%;
+    padding-bottom: 8px;
+}
+
+.page-modules-container-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+.page-modules-container-item {
+    font-size: 14px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+}
+
+.page-modules-container-test {
+    color: #cab5b5;
+    font-size: 18px;
+}
+
+.page-modules-boxing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-modules-edit-button {
+    color: #cab5b5;
+}
+/*--Footer--*/
+.footer {
+}
+
+.footer-content {
+    background-color: #efefef;
+    color: #181717;
+    font-size: 12px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+}

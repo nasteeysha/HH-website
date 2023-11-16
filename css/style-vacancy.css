@@ -1,0 +1,49 @@
+﻿@import url(/fonts/DelaGothicOne_Regular.ttf);
+.vacancy {
+    border-radius: 10px;
+    background: #cab5b5; /* Цвет фона */
+    width: 250px; /* Ширина */
+    margin: 0 20px 20px 30px; /* Отступы */
+    padding: 20px 5px;
+    text-align: start; /* Выравнивание по центру */
+    display: inline-block; /* Строчно-блочный элемент */
+    font-family: "Dela Gothic One Regular";
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.vacancy img {
+        border: 2px solid #8b8e4b; /* Параметры рамки */
+    }
+
+.vacancy p {
+        margin-left: 10px;
+        margin-bottom: 3px;
+    }
+.find-input {
+    width: 50%;
+    height: 32px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-left: 25%;
+    padding-left: 18px;
+    color: white;
+    line-height: 142%;
+    background: #cab5b5;
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+    .find-input::placeholder {
+        color: #efefef;
+    }
+.page__vacancy-container {
+    width: 30%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 65px;
+    animation-name: Opacity;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}

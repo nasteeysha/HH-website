@@ -1,0 +1,217 @@
+@import url(/fonts/DelaGothicOne_Regular.ttf);
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #efefef;
+    background-color: #cab5b5;
+    font-family: "Dela Gothic One Regular";
+}
+*::-webkit-scrollbar {
+  width: 4px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  border: 3px solid;
+  border-radius: 10px;
+  color: #efefef;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+._container {
+  max-width: 1160px;
+  margin: 0px auto;
+}
+a {
+  color: #efefef;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+}
+.header__container {
+  display: flex;
+  min-height: 80px;
+  align-items: center;
+}
+
+.header__menu {
+}
+.menu {
+  width: 100%;
+}
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+.menu__list1 {
+  display: flex;
+}
+.menu__list2 {
+  display: flex;
+}
+
+.menu__item {
+  margin: 0px 30px 0px 0px;
+}
+.menu__item_last {
+  margin: 0px 0px 0px 0px;
+}
+
+/*--Main--*/
+
+main {
+   
+  flex: 1 1 auto;
+}
+.page {
+}
+.page__container {
+  padding: 40px 0px 0px 0px;
+  position: relative;
+  z-index: 2;
+}
+.page__boxing {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  margin-top: 80px;
+}
+.page__boxing-title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color:white;
+}
+.page__boxing-back-button {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    color: #cab5b5;
+}
+.image {
+    border-radius: 10px;
+}
+
+.page__boxing-description {
+  display: flex;
+  margin-top:10px;
+}
+.page__boxing-name {
+    color: #c7a7a7;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.page__boxing-edit {
+    color: black;
+    margin-top: auto;
+}
+.name__boxing {
+    display: flex;
+    flex-direction: column;
+}
+
+.page__boxing_right-part {
+}
+.results__boxing {
+  display: flex;
+  height: 200px;
+  justify-content: space-between;
+}
+.results__boxing-group {
+  display: flex;
+  flex-direction: column;
+}
+.result {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.exam-result {
+  margin-top: auto;
+  font-size: 18px;
+}
+.scale {
+  justify-content: flex-end;
+}
+
+.page-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.select-sort-mobile {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+.select-sort-mobile::-ms-expand {
+  /* IE */
+  display: none;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -o-appearance: none;
+}
+select::-ms-expand {
+    position:absolute;
+  
+  opacity:0%;
+  z-index:-2;
+}
+
+.page-input {
+    width: 270px;
+    color: #cab5b5;
+    height: 32px;
+    border-radius: 10px;
+    padding: 6px 20px;
+    appearance: none;
+    background: url(/img/Polygon\ 1.svg) rgba(217, 217, 217, 0.1) no-repeat right;
+    background-position-x: calc(100% - 20px);
+    overflow: hidden;
+    margin-top: 40px;
+}
+.students-results {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+}
+.student-result {
+  margin-top: 10px;
+}
+.student-exam-result {
+  margin-top: auto;
+}
+.test-form-button {
+    margin-top: 20px;
+    padding: 6px 8px;
+    border-radius: 10px;
+    background-color: #cab5b5;
+}
+/*--Footer--*/
+.footer {
+}
+.footer-content {
+  background-color: #efefef;
+  color: #181717;
+  font-size: 12px;
+  padding-top: 35px;
+  padding-bottom: 15px;
+}

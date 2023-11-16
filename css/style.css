@@ -1,0 +1,267 @@
+@import url(/fonts/DelaGothicOne_Regular.ttf);
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  color: #efefef;
+  background-color: #e1dfdf;
+  font-family: "Dela Gothic One Regular";
+}
+*::-webkit-scrollbar {
+  width: 4px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  border: 3px solid;
+  border-radius: 10px;
+  color: #efefef;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+._container {
+  max-width: 1160px;
+  margin: 0px auto;
+}
+/*._ibg {
+  position: relative;
+}*/
+/*.ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}*/
+a { /*text in shapka*/
+    color: white;
+    font-size: 16px;
+    width: 300px;
+    align-items: center;
+    padding: 2em 2em;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: #cab5b5;
+}
+.header__container {
+  display: grid;
+  min-height: 50px;
+  align-items: center;
+}
+._container {
+}
+
+.header__menu {
+}
+.menu {
+  width: 100%;
+}
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 13px;
+  justify-content: space-between;
+}
+.menu__list1 {
+  display: flex;
+}
+.menu__list2 {
+  display: flex;
+}
+
+.menu__item {
+  margin: 0px 30px 0px 0px;
+}
+.menu__item_last {
+  margin: 0px 0px 0px 0px;
+}
+.menu__link {
+  font-size: 18px;
+}
+/*--Main--*/
+main{
+    
+    flex:1 1 auto;
+}
+.page {
+  
+}
+.page__main-block {
+}
+.main-block {
+  position: relative;
+}
+.main-block__container {
+}
+.main-block__body {
+  padding: 129px 0px 0px 0px;
+  position: relative;
+  z-index: 2;
+}
+._container {
+}
+.main-block__title {
+    font-size: 80px;
+    line-height: normal;
+    margin-bottom: 2em;
+    margin-top: 10%;
+    text-align: center;
+    text-shadow: 5px 5px #cab5b5;
+}
+.main-block__buttons {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+}
+.main-block__button {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #cab5b5;
+    color: white;
+    padding: 1em;
+    border-radius: 17px;
+    font-size: 22px;
+}
+.main-block__image {
+    position: absolute;
+    width:100%;
+    top: 0px;
+    left: 0;
+}
+.page__frontend {
+  position: relative;
+  z-index: 5;
+}
+.frontend {
+}
+.frontend__container {
+  max-width: 830px;
+}
+._container {
+}
+.frontend-title {
+  margin-top: 230px;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+.frontend-text1 {
+  text-align: left;
+  margin-bottom: 35px;
+  line-height: 181%;
+}
+.frontend-text2 {
+  text-align: left;
+  line-height: 181%;
+  margin-bottom: 80px;
+}
+.page-advantages {
+}
+.advantages-why-title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+.advantages-demand {
+  color: #fd3f3f;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.advantages-text1 {
+  max-width: 650px;
+  margin-right: 20px;
+}
+.advantages-mobility {
+  color: #fff852;
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.advantages-text2 {
+}
+.advantages-lackof {
+    color: #cab5b5;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.advantages-text3 {
+  max-width: 650px;
+}
+.advantages-boxing {
+  display: flex;
+  justify-content:space-between;
+}
+.page__teaches {
+}
+.teaches__container {
+}
+._container {
+}
+.teaches-whatteaches {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 80px;
+  margin-bottom: 35px;
+}
+.teaches-text1 {
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 145%;
+}
+.teaches-boxing {
+  display: flex;
+}
+.teaches-boxing-vertical {
+}
+.teaches-text2 {
+  margin-bottom: 30px;
+  line-height: 181%;
+}
+.teaches-text3 {
+  line-height: 181%;
+}
+.teaches__buttons {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
+.teaches__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #efefef;
+  color: #181717;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-top: 35px;
+  font-size: 18px;
+  margin-bottom: 120px;
+}
+/*--Footer--*/
+.footer {
+  flex: 0 0 auto;
+}
+.footer-content {
+  background-color: #eeeeee;
+  color: #eeeeee;
+  font-size: 12px;
+  padding-top: 35px;
+  padding-bottom: 15px;
+}
